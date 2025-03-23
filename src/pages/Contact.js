@@ -13,10 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_ln93vks",
-        "template_b5o0s1k",
+        process.env.REACT_APP_SERVICE_ID_EMAILJS,
+        process.env.REACT_APP_TEMPLATE_ID_EMAILJS,
         form.current,
-        "3SNeUGDiNbpTciyjZ"
+        process.env.REACT_APP_PUBLIC_ID_EMAILJS
       )
       .then(
         (result) => {
