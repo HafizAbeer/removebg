@@ -20,12 +20,16 @@ const ImageUploader = () => {
     formData.append("size", "auto");
 
     try {
-      const res = await axios.post(process.env.REACT_APP_API_LINK, formData, {
-        headers: {
-          "X-Api-Key": process.env.REACT_APP_BG_API_KEY,
-        },
-        responseType: "blob",
-      });
+      const res = await axios.post(
+        "https://api.remove.bg/v1.0/removebg",
+        formData,
+        {
+          headers: {
+            "X-Api-Key": Erdh6fAvRijtpZ3vAJvJm2pZ,
+          },
+          responseType: "blob",
+        }
+      );
       setOutput(URL.createObjectURL(res.data));
     } catch (err) {
       console.error(err);

@@ -25,14 +25,14 @@ const Home = () => {
       {/* Ad Placeholder */}
       <div className="mt-12 w-full">
         <div className="border p-4 bg-gray-100 rounded-lg shadow-sm">
-          {/* <ins
+          <ins
             className="adsbygoogle"
             style={{ display: "block" }}
             data-ad-client="ca-pub-XXXX"
             data-ad-slot="XXXX"
             data-ad-format="auto"
             data-full-width-responsive="true"
-          ></ins> */}
+          ></ins>
           <p className="text-sm text-gray-500">Advertisement</p>
         </div>
       </div>
