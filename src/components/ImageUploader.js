@@ -25,7 +25,7 @@ const ImageUploader = () => {
         formData,
         {
           headers: {
-            "X-Api-Key": Erdh6fAvRijtpZ3vAJvJm2pZ,
+            "X-Api-Key": "Erdh6fAvRijtpZ3vAJvJm2pZ",
           },
           responseType: "blob",
         }
